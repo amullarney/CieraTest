@@ -38,20 +38,7 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'Test',
 	'A function which exercises many aspects of Package Reference functionality.',
-	'// create instance of a shared class
-//create object instance res1 of SharedResource;
-// generate event to shared class
-//generate Resource1:tick() to res1;
-// invoke a function in a shared package
-//::sharedFunction();
-// Operation invocation on shared instance
-//res1.Increment();
-//LOG::LogInteger( message:res1.ivalue ); 
-// Class-based operation invocation in shared package
-//Thing::classOperation();
-// Invoke Bridge operation in shared package
-//Report::UsageReport();
-txt = "Test";
+	'txt = "Test";
 ',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,

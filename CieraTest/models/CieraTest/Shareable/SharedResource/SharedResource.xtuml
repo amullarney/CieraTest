@@ -25,6 +25,27 @@ INSERT INTO O_ATTR
 	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
 	'');
+INSERT INTO O_DBATTR
+	VALUES ("30d574e1-c25b-40fd-befb-02af3b847a15",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382",
+	'self.calculateMe = 99;',
+	1,
+	0);
+INSERT INTO O_BATTR
+	VALUES ("30d574e1-c25b-40fd-befb-02af3b847a15",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382");
+INSERT INTO O_ATTR
+	VALUES ("30d574e1-c25b-40fd-befb-02af3b847a15",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382",
+	"28cb53b1-8af2-4dc1-9a35-7e1f35fff982",
+	'calculateMe',
+	'',
+	'',
+	'calculateMe',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
 INSERT INTO O_ID
 	VALUES (0,
 	"0e0e3d4a-2b60-41f8-a077-febeccf50382");
