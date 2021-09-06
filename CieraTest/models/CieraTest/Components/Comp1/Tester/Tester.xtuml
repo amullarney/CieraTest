@@ -1,0 +1,89 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("771609c5-5aab-463b-8a8a-b733b6f220fa",
+	"00000000-0000-0000-0000-000000000000",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'Tester',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("d9106097-2e59-4377-a094-0a210808f805",
+	112,
+	"771609c5-5aab-463b-8a8a-b733b6f220fa",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	200,
+	150,
+	0,
+	'4.1.17',
+	'CieraTest::Components::Comp1::Tester');
+INSERT INTO DIM_DIA
+	VALUES ("d9106097-2e59-4377-a094-0a210808f805",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("04fd3bff-68c8-4701-b770-2d634933bab2",
+	"00000000-0000-0000-0000-000000000000",
+	'Test',
+	'A function which exercises many aspects of Package Reference functionality.',
+	'// create instance of a shared class
+//create object instance res1 of SharedResource;
+// generate event to shared class
+//generate Resource1:tick() to res1;
+// invoke a function in a shared package
+//::sharedFunction();
+// Operation invocation on shared instance
+//res1.Increment();
+//LOG::LogInteger( message:res1.ivalue ); 
+// Class-based operation invocation in shared package
+//Thing::classOperation();
+// Invoke Bridge operation in shared package
+//Report::UsageReport();
+txt = "Test";
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0,
+	1);
+INSERT INTO PE_PE
+	VALUES ("04fd3bff-68c8-4701-b770-2d634933bab2",
+	1,
+	"771609c5-5aab-463b-8a8a-b733b6f220fa",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("771609c5-5aab-463b-8a8a-b733b6f220fa",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"1414463f-a162-4d60-950a-56e3fd88322d",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("1414463f-a162-4d60-950a-56e3fd88322d",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'Comp1',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'',
+	'../Comp1.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'CieraTest',
+	1,
+	'../../../CieraTest.xtuml');

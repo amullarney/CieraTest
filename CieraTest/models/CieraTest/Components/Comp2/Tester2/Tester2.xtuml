@@ -1,0 +1,87 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("91a4c830-057e-4785-a84f-7eb40f3eebd8",
+	"00000000-0000-0000-0000-000000000000",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'Tester2',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("e4f7a1ee-11e6-4e05-b5f3-98959752f434",
+	112,
+	"91a4c830-057e-4785-a84f-7eb40f3eebd8",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	200,
+	150,
+	0,
+	'',
+	'CieraTest::Components::Comp2::Tester2');
+INSERT INTO DIM_DIA
+	VALUES ("e4f7a1ee-11e6-4e05-b5f3-98959752f434",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("36feb3be-0b95-4ac4-b679-7173cc1e3adc",
+	"00000000-0000-0000-0000-000000000000",
+	'Test2',
+	'A function which exercises many aspects of Package Reference functionality.',
+	'// Class-based operation invocation in shared package
+//Thing::classOperation();
+// Invoke Bridge operation in shared package
+//Report::UsageReport();
+// create instance of a shared class
+//create object instance res1 of Resource;
+// generate event to shared class
+//generate Resource1:tick() to res1;
+// invoke a function in a shared package
+//::sharedFunction();
+// Operation invocation on shared instance
+//res1.Increment();
+txt = "Test2";',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0,
+	1);
+INSERT INTO PE_PE
+	VALUES ("36feb3be-0b95-4ac4-b679-7173cc1e3adc",
+	1,
+	"91a4c830-057e-4785-a84f-7eb40f3eebd8",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("91a4c830-057e-4785-a84f-7eb40f3eebd8",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"9e5f33e6-8eb1-477f-bd9c-9e3da79782dd",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("9e5f33e6-8eb1-477f-bd9c-9e3da79782dd",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'Comp2',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'',
+	'../Comp2.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'CieraTest',
+	1,
+	'../../../CieraTest.xtuml');

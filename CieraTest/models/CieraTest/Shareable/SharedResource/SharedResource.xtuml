@@ -1,0 +1,50 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("0e0e3d4a-2b60-41f8-a077-febeccf50382",
+	'SharedResource',
+	1,
+	'SharedResource',
+	'Class - with State Model - defined in a package designed to be shared via Package Reference.',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("28cb53b1-8af2-4dc1-9a35-7e1f35fff982",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382");
+INSERT INTO O_BATTR
+	VALUES ("28cb53b1-8af2-4dc1-9a35-7e1f35fff982",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382");
+INSERT INTO O_ATTR
+	VALUES ("28cb53b1-8af2-4dc1-9a35-7e1f35fff982",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382",
+	"00000000-0000-0000-0000-000000000000",
+	'ivalue',
+	'Serves as an attribute access example; limits state model iterations.',
+	'',
+	'ivalue',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382");
+INSERT INTO O_ID
+	VALUES (1,
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382");
+INSERT INTO O_ID
+	VALUES (2,
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382");
+INSERT INTO PE_PE
+	VALUES ("0e0e3d4a-2b60-41f8-a077-febeccf50382",
+	1,
+	"0973a7dc-589e-413b-a389-4b5b5fa87239",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("0973a7dc-589e-413b-a389-4b5b5fa87239",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'Shareable',
+	'',
+	0,
+	'../Shareable.xtuml');
