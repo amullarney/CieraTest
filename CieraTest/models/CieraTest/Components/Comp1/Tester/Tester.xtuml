@@ -26,6 +26,30 @@ INSERT INTO GD_MD
 	0,
 	'4.1.17',
 	'CieraTest::Components::Comp1::Tester');
+INSERT INTO GD_GE
+	VALUES ("2af251b6-0b7e-4639-959e-75c6abe88c35",
+	"d9106097-2e59-4377-a094-0a210808f805",
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71",
+	21,
+	0,
+	'CieraTest::Components::Comp1::Tester::testClass1');
+INSERT INTO GD_SHP
+	VALUES ("2af251b6-0b7e-4639-959e-75c6abe88c35");
+INSERT INTO GD_NCS
+	VALUES ("2af251b6-0b7e-4639-959e-75c6abe88c35");
+INSERT INTO DIM_ND
+	VALUES (200.000000,
+	150.000000,
+	"2af251b6-0b7e-4639-959e-75c6abe88c35");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"2af251b6-0b7e-4639-959e-75c6abe88c35",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("2af251b6-0b7e-4639-959e-75c6abe88c35",
+	0,
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_DIA
 	VALUES ("d9106097-2e59-4377-a094-0a210808f805",
 	'',
@@ -38,20 +62,16 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'Test',
 	'A function which exercises many aspects of Package Reference functionality.',
-	'// create instance of a shared class
-//create object instance res1 of SharedResource;
-// generate event to shared class
-//generate Resource1:tick() to res1;
-// invoke a function in a shared package
-//::sharedFunction();
-// Operation invocation on shared instance
-//res1.Increment();
-//LOG::LogInteger( message:res1.ivalue ); 
+	'create object instance res1 of SharedResource;
+LOG::LogInfo( message:"created" );
+res1.sharedOp();
+LOG::LogInteger( message:res1.ivalue );
+generate SharedResource1:tick() to res1;
+SharedResource::sharedClassOp();
 // Class-based operation invocation in shared package
 //Thing::classOperation();
 // Invoke Bridge operation in shared package
 //Report::UsageReport();
-txt = "Test";
 ',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,

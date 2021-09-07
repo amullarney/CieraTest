@@ -1,1 +1,2 @@
 *,RootPackage,*,CieraTest::Deployment
+Components::Comp1,InitFunction,Component,Test

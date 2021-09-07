@@ -1,0 +1,45 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("8ac3b46d-e773-498f-bbbc-9f93c4897e71",
+	'testClass1',
+	1,
+	'testClass1',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("7c4d6de9-c8ba-4abd-97db-0d81ea454182",
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71",
+	'classOp1',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	0,
+	'LOG::LogInfo( message:"classOp1" );',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	1);
+INSERT INTO O_ID
+	VALUES (0,
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71");
+INSERT INTO O_ID
+	VALUES (1,
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71");
+INSERT INTO O_ID
+	VALUES (2,
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71");
+INSERT INTO PE_PE
+	VALUES ("8ac3b46d-e773-498f-bbbc-9f93c4897e71",
+	1,
+	"771609c5-5aab-463b-8a8a-b733b6f220fa",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("771609c5-5aab-463b-8a8a-b733b6f220fa",
+	"00000000-0000-0000-0000-000000000000",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'Tester',
+	'',
+	0,
+	'../Tester.xtuml');

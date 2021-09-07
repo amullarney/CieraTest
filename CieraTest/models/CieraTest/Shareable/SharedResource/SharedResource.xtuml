@@ -7,6 +7,32 @@ INSERT INTO O_OBJ
 	'SharedResource',
 	'Class - with State Model - defined in a package designed to be shared via Package Reference.',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("d5680742-722a-4bb3-bdb5-36c468f69738",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382",
+	'sharedOp',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.ivalue = ::sharedFn();',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	1);
+INSERT INTO O_TFR
+	VALUES ("8893763c-a041-4f9e-b775-677da5d152e0",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382",
+	'sharedClassOp',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	0,
+	'LOG::LogInfo( message:"shared class op" );',
+	1,
+	'',
+	"d5680742-722a-4bb3-bdb5-36c468f69738",
+	0,
+	2);
 INSERT INTO O_NBATTR
 	VALUES ("28cb53b1-8af2-4dc1-9a35-7e1f35fff982",
 	"0e0e3d4a-2b60-41f8-a077-febeccf50382");
@@ -23,6 +49,24 @@ INSERT INTO O_ATTR
 	'ivalue',
 	0,
 	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("77b41199-fad8-43d6-94a2-927f358ad562",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382");
+INSERT INTO O_BATTR
+	VALUES ("77b41199-fad8-43d6-94a2-927f358ad562",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382");
+INSERT INTO O_ATTR
+	VALUES ("77b41199-fad8-43d6-94a2-927f358ad562",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382",
+	"28cb53b1-8af2-4dc1-9a35-7e1f35fff982",
+	'current_state',
+	'',
+	'',
+	'current_state',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000006",
 	'',
 	'');
 INSERT INTO O_ID

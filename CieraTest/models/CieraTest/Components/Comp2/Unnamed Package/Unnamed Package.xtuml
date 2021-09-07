@@ -1,16 +1,16 @@
 -- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
 
 INSERT INTO EP_PKG
-	VALUES ("a4bac2ec-6cce-46e1-a049-9ad2ff9803e7",
+	VALUES ("e7ad089b-f56c-430e-b032-9ddc890cf68e",
 	"00000000-0000-0000-0000-000000000000",
 	"965d096a-cdb2-49c5-a802-5059e5754cdc",
 	'Unnamed Package',
 	'',
 	0);
 INSERT INTO GD_MD
-	VALUES ("81399890-568c-4cea-9105-9b8b4378059a",
+	VALUES ("a442e520-c70d-49a7-9263-d05041c0d901",
 	112,
-	"a4bac2ec-6cce-46e1-a049-9ad2ff9803e7",
+	"e7ad089b-f56c-430e-b032-9ddc890cf68e",
 	108,
 	0,
 	0,
@@ -27,14 +27,14 @@ INSERT INTO GD_MD
 	'',
 	'CieraTest::Components::Comp2::Unnamed Package');
 INSERT INTO DIM_DIA
-	VALUES ("81399890-568c-4cea-9105-9b8b4378059a",
+	VALUES ("a442e520-c70d-49a7-9263-d05041c0d901",
 	'',
 	1.000000,
 	0.000000,
 	0.000000,
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO EP_PKGREF
-	VALUES ("a4bac2ec-6cce-46e1-a049-9ad2ff9803e7",
+	VALUES ("e7ad089b-f56c-430e-b032-9ddc890cf68e",
 	"0973a7dc-589e-413b-a389-4b5b5fa87239");
 INSERT INTO EP_PKG_PROXY
 	VALUES ("0973a7dc-589e-413b-a389-4b5b5fa87239",
@@ -45,7 +45,7 @@ INSERT INTO EP_PKG_PROXY
 	0,
 	'../../../Shareable/Shareable.xtuml');
 INSERT INTO PE_PE
-	VALUES ("a4bac2ec-6cce-46e1-a049-9ad2ff9803e7",
+	VALUES ("e7ad089b-f56c-430e-b032-9ddc890cf68e",
 	1,
 	"00000000-0000-0000-0000-000000000000",
 	"9e5f33e6-8eb1-477f-bd9c-9e3da79782dd",
