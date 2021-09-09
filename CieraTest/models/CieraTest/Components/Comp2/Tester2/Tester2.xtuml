@@ -38,8 +38,7 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'Test2',
 	'A function which exercises many aspects of Package Reference functionality.',
-	'SharedResource::sharedClassOp();
-txt = "Test2";',
+	'txt = "Test2";',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',

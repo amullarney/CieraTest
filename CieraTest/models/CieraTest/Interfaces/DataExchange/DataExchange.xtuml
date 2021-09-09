@@ -1,0 +1,50 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("0368c079-d4ba-4e40-9722-6148f0c8e680",
+	"00000000-0000-0000-0000-000000000000",
+	'DataExchange',
+	'');
+INSERT INTO C_EP
+	VALUES ("7ab1e703-b7f6-4805-bfc4-0f1268cfd272",
+	"0368c079-d4ba-4e40-9722-6148f0c8e680",
+	-1,
+	'XferInst',
+	'',
+	1);
+INSERT INTO C_AS
+	VALUES ("7ab1e703-b7f6-4805-bfc4-0f1268cfd272",
+	'XferInst',
+	'',
+	1,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("83dac249-2f34-4d9a-be8c-851aa6adc831",
+	"7ab1e703-b7f6-4805-bfc4-0f1268cfd272",
+	"631406b5-0140-4705-9e72-6fe03d741850",
+	'theData',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_DT_PROXY
+	VALUES ("631406b5-0140-4705-9e72-6fe03d741850",
+	"00000000-0000-0000-0000-000000000000",
+	'inst_ref<DataItem>',
+	'',
+	'',
+	'../../Shareable/Shareable.xtuml');
+INSERT INTO PE_PE
+	VALUES ("0368c079-d4ba-4e40-9722-6148f0c8e680",
+	1,
+	"03b9a428-b46f-4e27-a1dc-7698ef516700",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("03b9a428-b46f-4e27-a1dc-7698ef516700",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'Interfaces',
+	'',
+	0,
+	'../Interfaces.xtuml');
