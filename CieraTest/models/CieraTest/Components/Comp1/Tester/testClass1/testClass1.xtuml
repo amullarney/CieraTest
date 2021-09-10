@@ -20,6 +20,56 @@ INSERT INTO O_TFR
 	"00000000-0000-0000-0000-000000000000",
 	0,
 	1);
+INSERT INTO O_NBATTR
+	VALUES ("34f1449c-6f9a-4ef2-9a92-317bfe5795f5",
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71");
+INSERT INTO O_BATTR
+	VALUES ("34f1449c-6f9a-4ef2-9a92-317bfe5795f5",
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71");
+INSERT INTO O_ATTR
+	VALUES ("34f1449c-6f9a-4ef2-9a92-317bfe5795f5",
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71",
+	"00000000-0000-0000-0000-000000000000",
+	'status',
+	'',
+	'',
+	'status',
+	0,
+	"b05ea11f-509e-48b0-ab61-ab58f30ed81d",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("b05ea11f-509e-48b0-ab61-ab58f30ed81d",
+	"00000000-0000-0000-0000-000000000000",
+	'ResourceStatus',
+	'',
+	'',
+	'../../../../Shareable/Shareable.xtuml');
+INSERT INTO O_NBATTR
+	VALUES ("9cd7f168-5d17-4bcc-8ee6-fa07da2aaf3a",
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71");
+INSERT INTO O_BATTR
+	VALUES ("9cd7f168-5d17-4bcc-8ee6-fa07da2aaf3a",
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71");
+INSERT INTO O_ATTR
+	VALUES ("9cd7f168-5d17-4bcc-8ee6-fa07da2aaf3a",
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71",
+	"34f1449c-6f9a-4ef2-9a92-317bfe5795f5",
+	'use',
+	'',
+	'',
+	'use',
+	0,
+	"42c4f3cd-9c27-45a5-b291-e7db4d24ffc2",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("42c4f3cd-9c27-45a5-b291-e7db4d24ffc2",
+	"00000000-0000-0000-0000-000000000000",
+	'Utilization',
+	'',
+	'',
+	'../../../../Shareable/Shareable.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
 	"8ac3b46d-e773-498f-bbbc-9f93c4897e71");

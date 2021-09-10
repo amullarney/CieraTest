@@ -63,6 +63,8 @@ INSERT INTO S_SYNC
 	'Test',
 	'A function which exercises many aspects of Package Reference functionality.',
 	'create object instance res1 of SharedResource;
+res1.status = ResourceStatus::Free;
+res1.loadFactor = 0.0;
 //create object instance sub2 of SharedSub2;
 //relate sub2 to res1 across R1;
 LOG::LogInfo( message:"created" );
