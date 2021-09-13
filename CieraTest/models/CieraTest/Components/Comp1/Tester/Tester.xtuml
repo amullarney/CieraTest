@@ -65,18 +65,29 @@ INSERT INTO S_SYNC
 	'create object instance res1 of SharedResource;
 res1.status = ResourceStatus::Free;
 res1.loadFactor = 0.0;
-//create object instance sub2 of SharedSub2;
-//relate sub2 to res1 across R1;
+create object instance sub2 of sharedSub2;
+relate sub2 to res1 across R101;
 LOG::LogInfo( message:"created" );
+create object instance proc of Process;
+proc.name = "testing";
+create object instance asg of ResourceAssignment;
+relate proc to res1 across R102 using asg;
+create object instance job of Workpiece;
+relate job to proc across R103;
 //res1.sharedDeferred();
 res1.sharedOp();
 LOG::LogInteger( message:res1.ivalue );
 generate SharedResource1:tick() to res1;
 SharedResource::sharedClassOp();
-// Class-based operation invocation in shared package
-//Thing::classOperation();
-// Invoke Bridge operation in shared package
-//Report::UsageReport();
+select many resources related by proc->SharedResource[R102];
+LOG::LogInteger( message:cardinality resources );
+select any proc related by sub2->SharedResource[R101]->Process[R102];
+LOG::LogInfo( message:"found: " + proc.name + ".. should be ''testing''");
+select any res related by proc->SharedResource[R102];
+select one sub related by res->sharedSub2[R101];
+if ( not_empty sub )
+  LOG::LogInfo( message:"Found subtype across R101" );
+end if;
 ',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,

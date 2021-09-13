@@ -61,7 +61,7 @@ INSERT INTO SM_ACT
 	VALUES ("48dfd302-bb63-462d-a9d9-d1297fc6f513",
 	"6c1c23f9-f4a1-420c-b51d-6234fddfbaa1",
 	1,
-	'LOG::LogInfo( message:"time passes..." );',
+	'LOG::LogInfo( message:"Shared state: time passes..." );',
 	'',
 	0);
 INSERT INTO SM_TAH
@@ -75,7 +75,7 @@ INSERT INTO SM_ACT
 	VALUES ("94ebf03b-e5a1-464e-b55d-c3b54023bcf4",
 	"6c1c23f9-f4a1-420c-b51d-6234fddfbaa1",
 	1,
-	'',
+	'LOG::LogInfo( message:"Shared tick transition activity" );',
 	'',
 	0);
 INSERT INTO GD_MD
