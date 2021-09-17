@@ -34,6 +34,29 @@ INSERT INTO O_TFR
 	"d5680742-722a-4bb3-bdb5-36c468f69738",
 	0,
 	2);
+INSERT INTO O_TFR
+	VALUES ("8f9b705b-ab78-47ea-9a30-7aad861093f0",
+	"0e0e3d4a-2b60-41f8-a077-febeccf50382",
+	'sharedDeferOp',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0,
+	'',
+	"8893763c-a041-4f9e-b775-677da5d152e0",
+	0,
+	3);
+INSERT INTO O_DEF
+	VALUES ("8f9b705b-ab78-47ea-9a30-7aad861093f0",
+	"23de190d-d9b9-4f72-a6e7-29a37ecfa41d",
+	0);
+INSERT INTO R_REL_PROXY
+	VALUES ("23de190d-d9b9-4f72-a6e7-29a37ecfa41d",
+	101,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'../Shareable.xtuml');
 INSERT INTO O_NBATTR
 	VALUES ("28cb53b1-8af2-4dc1-9a35-7e1f35fff982",
 	"0e0e3d4a-2b60-41f8-a077-febeccf50382");

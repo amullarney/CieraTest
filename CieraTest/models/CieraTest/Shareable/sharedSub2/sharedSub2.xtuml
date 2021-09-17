@@ -7,6 +7,19 @@ INSERT INTO O_OBJ
 	'sharedSub2',
 	'',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("97c35774-f572-4113-b3ec-130ddfba5a06",
+	"d744b9d4-2176-4c46-afe1-ce4899ba5855",
+	'sharedDeferOp',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'LOG::LogInfo( message:"Deferred operation executing in sharedSub2" );',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	1);
 INSERT INTO O_ID
 	VALUES (0,
 	"d744b9d4-2176-4c46-afe1-ce4899ba5855");

@@ -68,6 +68,7 @@ res1.loadFactor = 0.0;
 create object instance sub2 of sharedSub2;
 relate sub2 to res1 across R101;
 LOG::LogInfo( message:"created" );
+res1.sharedDeferOp();
 create object instance proc of Process;
 proc.name = "testing";
 create object instance asg of ResourceAssignment;
