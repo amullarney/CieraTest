@@ -4,7 +4,7 @@ INSERT INTO EP_PKG
 	VALUES ("326a86c4-ef7d-45b6-a623-c35d7e129b5b",
 	"00000000-0000-0000-0000-000000000000",
 	"965d096a-cdb2-49c5-a802-5059e5754cdc",
-	'Comp1Referred',
+	'ShareableRef',
 	'Demonstrate that an empty package can be named before Package Reference assignment.',
 	0);
 INSERT INTO GD_MD
@@ -25,7 +25,7 @@ INSERT INTO GD_MD
 	0,
 	0,
 	'',
-	'CieraTest::Components::Comp1::Comp1Referred');
+	'CieraTest::Components::Comp1::ShareableRef');
 INSERT INTO DIM_DIA
 	VALUES ("4d7373eb-0019-4218-808d-9ca4bd243cce",
 	'',

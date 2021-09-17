@@ -1,0 +1,32 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("f2a5545a-6a55-41af-9775-7ef4b3ab31c0",
+	'Worker',
+	7,
+	'Worker',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_ID
+	VALUES (0,
+	"f2a5545a-6a55-41af-9775-7ef4b3ab31c0");
+INSERT INTO O_ID
+	VALUES (1,
+	"f2a5545a-6a55-41af-9775-7ef4b3ab31c0");
+INSERT INTO O_ID
+	VALUES (2,
+	"f2a5545a-6a55-41af-9775-7ef4b3ab31c0");
+INSERT INTO PE_PE
+	VALUES ("f2a5545a-6a55-41af-9775-7ef4b3ab31c0",
+	1,
+	"0973a7dc-589e-413b-a389-4b5b5fa87239",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("0973a7dc-589e-413b-a389-4b5b5fa87239",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'Shareable',
+	'',
+	0,
+	'../Shareable.xtuml');
