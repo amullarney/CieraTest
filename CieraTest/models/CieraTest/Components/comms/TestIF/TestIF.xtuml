@@ -1,0 +1,43 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("6d130dc6-429b-4ca1-a260-6f27fd2b8b09",
+	"00000000-0000-0000-0000-000000000000",
+	'TestIF',
+	'');
+INSERT INTO C_EP
+	VALUES ("9484b707-0edf-492e-9545-2b479c2200ea",
+	"6d130dc6-429b-4ca1-a260-6f27fd2b8b09",
+	-1,
+	'TestSignal',
+	'',
+	1);
+INSERT INTO C_AS
+	VALUES ("9484b707-0edf-492e-9545-2b479c2200ea",
+	'TestSignal',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("c556d6e8-fca1-4d9d-bc28-826d301aeae7",
+	"9484b707-0edf-492e-9545-2b479c2200ea",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'testparm',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO PE_PE
+	VALUES ("6d130dc6-429b-4ca1-a260-6f27fd2b8b09",
+	1,
+	"b4d9160d-b19a-4bcf-8542-63227d87153d",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("b4d9160d-b19a-4bcf-8542-63227d87153d",
+	"00000000-0000-0000-0000-000000000000",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'comms',
+	'',
+	0,
+	'../comms.xtuml');

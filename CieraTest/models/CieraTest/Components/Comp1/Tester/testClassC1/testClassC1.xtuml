@@ -2,9 +2,9 @@
 
 INSERT INTO O_OBJ
 	VALUES ("8ac3b46d-e773-498f-bbbc-9f93c4897e71",
-	'testClass1',
+	'testClassC1',
 	1,
-	'testClass1',
+	'testClassC1',
 	'',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TFR
@@ -20,6 +20,30 @@ INSERT INTO O_TFR
 	"00000000-0000-0000-0000-000000000000",
 	0,
 	1);
+INSERT INTO O_TFR
+	VALUES ("ca56a86d-87e4-4fdf-9253-ad855514cd88",
+	"8ac3b46d-e773-498f-bbbc-9f93c4897e71",
+	'deferOp',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'// defer
+LOG::LogInfo( message:"defer in super" );',
+	0,
+	'',
+	"7c4d6de9-c8ba-4abd-97db-0d81ea454182",
+	0,
+	2);
+INSERT INTO O_DEF
+	VALUES ("ca56a86d-87e4-4fdf-9253-ad855514cd88",
+	"5584a832-b72a-479b-8ef8-fdbbc511e0dd",
+	1);
+INSERT INTO R_REL_PROXY
+	VALUES ("5584a832-b72a-479b-8ef8-fdbbc511e0dd",
+	77,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'../Tester.xtuml');
 INSERT INTO O_NBATTR
 	VALUES ("34f1449c-6f9a-4ef2-9a92-317bfe5795f5",
 	"8ac3b46d-e773-498f-bbbc-9f93c4897e71");
@@ -35,16 +59,9 @@ INSERT INTO O_ATTR
 	'',
 	'status',
 	0,
-	"b05ea11f-509e-48b0-ab61-ab58f30ed81d",
+	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
 	'');
-INSERT INTO S_DT_PROXY
-	VALUES ("b05ea11f-509e-48b0-ab61-ab58f30ed81d",
-	"00000000-0000-0000-0000-000000000000",
-	'ResourceStatus',
-	'',
-	'',
-	'../../../../Shareable/Shareable.xtuml');
 INSERT INTO O_NBATTR
 	VALUES ("9cd7f168-5d17-4bcc-8ee6-fa07da2aaf3a",
 	"8ac3b46d-e773-498f-bbbc-9f93c4897e71");
@@ -60,16 +77,9 @@ INSERT INTO O_ATTR
 	'',
 	'use',
 	0,
-	"42c4f3cd-9c27-45a5-b291-e7db4d24ffc2",
+	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
 	'');
-INSERT INTO S_DT_PROXY
-	VALUES ("42c4f3cd-9c27-45a5-b291-e7db4d24ffc2",
-	"00000000-0000-0000-0000-000000000000",
-	'Utilization',
-	'',
-	'',
-	'../../../../Shareable/Shareable.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
 	"8ac3b46d-e773-498f-bbbc-9f93c4897e71");

@@ -1,0 +1,45 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("dd1dd641-f66a-4d8e-840d-9ea497a0c41c",
+	'testSubC1',
+	2,
+	'testSubC1',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("582af024-47e1-40f0-a39f-237762e03ca8",
+	"dd1dd641-f66a-4d8e-840d-9ea497a0c41c",
+	'deferOp',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'LOG::LogInfo( message:"deferred op in testSubC1" );',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	1);
+INSERT INTO O_ID
+	VALUES (0,
+	"dd1dd641-f66a-4d8e-840d-9ea497a0c41c");
+INSERT INTO O_ID
+	VALUES (1,
+	"dd1dd641-f66a-4d8e-840d-9ea497a0c41c");
+INSERT INTO O_ID
+	VALUES (2,
+	"dd1dd641-f66a-4d8e-840d-9ea497a0c41c");
+INSERT INTO PE_PE
+	VALUES ("dd1dd641-f66a-4d8e-840d-9ea497a0c41c",
+	1,
+	"771609c5-5aab-463b-8a8a-b733b6f220fa",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("771609c5-5aab-463b-8a8a-b733b6f220fa",
+	"00000000-0000-0000-0000-000000000000",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'Tester',
+	'',
+	0,
+	'../Tester.xtuml');
