@@ -9,6 +9,22 @@ INSERT INTO SM_SM
 	0);
 INSERT INTO SM_MOORE
 	VALUES ("6c1c23f9-f4a1-420c-b51d-6234fddfbaa1");
+INSERT INTO SM_EVTDI
+	VALUES ("fbbda17b-255a-4192-bf26-4d084de69cb6",
+	"6c1c23f9-f4a1-420c-b51d-6234fddfbaa1",
+	'evdata',
+	'',
+	"483e7aa5-c40a-48a9-907e-2a49383bb415",
+	'',
+	"de2a9778-8f1b-4246-972b-e6a8000dd3a7",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_DT_PROXY
+	VALUES ("483e7aa5-c40a-48a9-907e-2a49383bb415",
+	"00000000-0000-0000-0000-000000000000",
+	'inst_ref<Workpiece>',
+	'',
+	'',
+	'../../Shareable.xtuml');
 INSERT INTO SM_LEVT
 	VALUES ("de2a9778-8f1b-4246-972b-e6a8000dd3a7",
 	"6c1c23f9-f4a1-420c-b51d-6234fddfbaa1",
