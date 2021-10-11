@@ -1,0 +1,59 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("5f74190c-6cab-472c-8bcb-9a6920e775e2",
+	"00000000-0000-0000-0000-000000000000",
+	'shriface',
+	'');
+INSERT INTO C_EP
+	VALUES ("e673841d-2995-4b22-a2b5-53091e17b43e",
+	"5f74190c-6cab-472c-8bcb-9a6920e775e2",
+	-1,
+	'shrsignal',
+	'',
+	1);
+INSERT INTO C_AS
+	VALUES ("e673841d-2995-4b22-a2b5-53091e17b43e",
+	'shrsignal',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("76f643bb-56cd-4c54-b943-ebc57805ed7a",
+	"e673841d-2995-4b22-a2b5-53091e17b43e",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'shrpsigparam',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("475b84f4-915c-4218-8319-826d23047f07",
+	"e673841d-2995-4b22-a2b5-53091e17b43e",
+	"aafdc3d6-cb3f-43e3-8141-f9a7ce406721",
+	'sigenum',
+	'',
+	0,
+	'',
+	"76f643bb-56cd-4c54-b943-ebc57805ed7a");
+INSERT INTO S_DT_PROXY
+	VALUES ("aafdc3d6-cb3f-43e3-8141-f9a7ce406721",
+	"00000000-0000-0000-0000-000000000000",
+	'shrenum',
+	'',
+	'',
+	'../Shareable.xtuml');
+INSERT INTO PE_PE
+	VALUES ("5f74190c-6cab-472c-8bcb-9a6920e775e2",
+	1,
+	"0973a7dc-589e-413b-a389-4b5b5fa87239",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("0973a7dc-589e-413b-a389-4b5b5fa87239",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'Shareable',
+	'',
+	0,
+	'../Shareable.xtuml');
