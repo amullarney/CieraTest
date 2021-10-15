@@ -38,8 +38,11 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'Test2',
 	'A function which exercises many aspects of Package Reference functionality.',
-	'SHRBRG::shrbrgop();
-send Port1::shrsignal( shrpsigparam:"abc", sigenum:shrenum::shr1 );',
+	'LOG::LogInfo( message:"Testing in Comp2" );
+send Port1::shrsignal( shrpsigparam:"abc", sigenum:shrenum::shr1 );
+//result = SHRBRG::shrbrgop();
+//LOG::LogInteger( message:result );
+LOG::LogInfo( message:"should be 3" );',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
