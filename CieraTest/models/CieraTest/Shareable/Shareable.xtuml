@@ -204,23 +204,12 @@ INSERT INTO S_EE
 	'SHRBRG',
 	1);
 INSERT INTO S_BRG
-	VALUES ("e0fb1d7e-9ff4-453a-a9ba-67ab5c5bb3e3",
-	"b3134ef6-6be2-4737-b318-9bc8cd939690",
-	'another',
-	'',
-	0,
-	"ba5eda7a-def5-0000-0000-000000000000",
-	'',
-	3,
-	'',
-	0);
-INSERT INTO S_BRG
 	VALUES ("a5f7081a-3259-45cd-905a-75516137c8a5",
 	"b3134ef6-6be2-4737-b318-9bc8cd939690",
 	'emptyop',
 	'',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000000",
+	"ba5eda7a-def5-0000-0000-000000000004",
 	'',
 	3,
 	'',
@@ -231,11 +220,20 @@ INSERT INTO S_BRG
 	'shrbrgop',
 	'',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000000",
-	'',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'return 50 + param.inval;',
 	1,
 	'',
 	0);
+INSERT INTO S_BPARM
+	VALUES ("ca54ec93-5e04-4dff-aefd-c57bf513bcb0",
+	"42af70a1-17f1-4625-8972-9cf9038668e4",
+	'inval',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
 INSERT INTO PE_PE
 	VALUES ("b3134ef6-6be2-4737-b318-9bc8cd939690",
 	1,

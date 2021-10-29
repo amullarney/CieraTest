@@ -39,13 +39,14 @@ INSERT INTO S_SYNC
 	'Test',
 	'A function which exercises many aspects of Package Reference functionality.',
 	'LOG::LogInfo( message:"Testing" );
-//result =SHRBRG::shrbrgop();
-//LOG::LogInteger( message:result );
-LOG::LogInfo( message:"should be 3" );
+result = SHRBRG::shrbrgop( inval:5 );
+LOG::LogInteger( message:result );
+LOG::LogInfo( message:"should be 55" );
 i = privateEE::privateBrgOp();
 LOG::LogInteger( message:i );
 LOG::LogInfo( message:"should be -1" );
-
+txt = SHRBRG::emptyop();
+LOG::LogInfo( message:"should be just this " + txt );
 ',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,

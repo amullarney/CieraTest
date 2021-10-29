@@ -40,9 +40,9 @@ INSERT INTO S_SYNC
 	'A function which exercises many aspects of Package Reference functionality.',
 	'LOG::LogInfo( message:"Testing in Comp2" );
 send Port1::shrsignal( shrpsigparam:"abc", sigenum:shrenum::shr1 );
-//result = SHRBRG::shrbrgop();
-//LOG::LogInteger( message:result );
-LOG::LogInfo( message:"should be 3" );',
+result = SHRBRG::shrbrgop( inval:6 );
+LOG::LogInteger( message:result );
+LOG::LogInfo( message:"should be 56" );',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
