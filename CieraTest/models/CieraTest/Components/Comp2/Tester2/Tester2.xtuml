@@ -26,6 +26,30 @@ INSERT INTO GD_MD
 	0,
 	'',
 	'CieraTest::Components::Comp2::Tester2');
+INSERT INTO GD_GE
+	VALUES ("e9807150-3c47-4ace-90af-c3577e7db025",
+	"e4f7a1ee-11e6-4e05-b5f3-98959752f434",
+	"52f0cba5-1dec-47f3-a56a-35ac79747182",
+	21,
+	0,
+	'CieraTest::Components::Comp2::Tester2::testclass');
+INSERT INTO GD_SHP
+	VALUES ("e9807150-3c47-4ace-90af-c3577e7db025");
+INSERT INTO GD_NCS
+	VALUES ("e9807150-3c47-4ace-90af-c3577e7db025");
+INSERT INTO DIM_ND
+	VALUES (200.000000,
+	150.000000,
+	"e9807150-3c47-4ace-90af-c3577e7db025");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"e9807150-3c47-4ace-90af-c3577e7db025",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("e9807150-3c47-4ace-90af-c3577e7db025",
+	0,
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_DIA
 	VALUES ("e4f7a1ee-11e6-4e05-b5f3-98959752f434",
 	'',
@@ -38,11 +62,14 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'Test2',
 	'A function which exercises many aspects of Package Reference functionality.',
-	'LOG::LogInfo( message:"Testing in Comp2" );
-send Port1::shrsignal( shrpsigparam:"abc", sigenum:shrenum::shr1 );
-//result = SHRBRG::shrbrgop();
-//LOG::LogInteger( message:result );
-LOG::LogInfo( message:"should be 3" );',
+	'LOG::LogInfo( message:"Testing bridge invocation in Comp2" );
+i = SHRBRG::emptyop( num:77);
+LOG::LogInteger( message:i );
+LOG::LogInfo( message:"should be integer default 0" );
+i = privateEE2::privateBrgOp();
+LOG::LogInteger( message:i );
+LOG::LogInfo( message:"should be 88 from hand-written code" );
+',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',

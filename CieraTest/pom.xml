@@ -51,7 +51,7 @@
               <goal>pyxtuml-pre-build</goal>
             </goals>
             <configuration>
-	            <loggingLevel>ERROR</loggingLevel>
+	            <loggingLevel>INFO</loggingLevel>
             </configuration>
           </execution>
           <execution>

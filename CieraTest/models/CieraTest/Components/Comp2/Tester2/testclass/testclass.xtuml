@@ -1,0 +1,45 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("52f0cba5-1dec-47f3-a56a-35ac79747182",
+	'testclass',
+	1,
+	'testclass',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("37e8398b-8a75-4d50-aaad-13193169d2c8",
+	"52f0cba5-1dec-47f3-a56a-35ac79747182",
+	'classop',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'i = privateEE2::privateBrgOp();',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	1);
+INSERT INTO O_ID
+	VALUES (0,
+	"52f0cba5-1dec-47f3-a56a-35ac79747182");
+INSERT INTO O_ID
+	VALUES (1,
+	"52f0cba5-1dec-47f3-a56a-35ac79747182");
+INSERT INTO O_ID
+	VALUES (2,
+	"52f0cba5-1dec-47f3-a56a-35ac79747182");
+INSERT INTO PE_PE
+	VALUES ("52f0cba5-1dec-47f3-a56a-35ac79747182",
+	1,
+	"91a4c830-057e-4785-a84f-7eb40f3eebd8",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("91a4c830-057e-4785-a84f-7eb40f3eebd8",
+	"00000000-0000-0000-0000-000000000000",
+	"965d096a-cdb2-49c5-a802-5059e5754cdc",
+	'Tester2',
+	'',
+	0,
+	'../Tester2.xtuml');
